@@ -27,5 +27,17 @@ In order to complete this study, users should:
 1. Collecting Data: Find and collect data from GoodReads Readers' Favorite Books site from 2019-2024 [2] separated into 13 genres. This is already set up in the preprocessing file of the code with the following genres: Fantasy, Fiction, Historical Fiction, Mystery & Thriller, Romance, Science Fiction, Horror, Young Adult Fantasy, Young Adult Fiction, Humor, History & Biography, Memoir and Autobiography, and Nonfiction.
 2. Preprocessing/Splitting Data: While running the preprocessing file, the image URL of the book covers will be gathered, along with their respective genres. It will also combine all the collected data for each genre into 2 CSV files: training and testing (train_book_covers.csv and test_book_covers.csv). Training data will be around 83% of the total data, while testing will account for the rest.
 
-3. Model analysis: Now that the data is properly formatted and split, the data can be used for analysis. In this analysis, we will use the model_analysis python notebook and run it on Rivanna on the files. Google Colab can also be used, however Rivanna is significantly faster to run. For a program this computationally high/complex, Rivanna is recommended. This may take a while, but the code will do the following:
-    * 
+3. Model analysis: Now that the data is properly formatted and split, the data can be used for analysis. In this analysis, we will use the model_analysis python notebook and run it on Rivanna on the files. Google Colab can also be used, however Rivanna is significantly faster to run. For a program this computationally high/complex, Rivanna is recommended. The program is complex because we will be using ResNet50, a tool that specializes in image classification. If needed, change file path names in the code (though it should be the same), or adjust ResNet50 model where desired. Running the program may take a while (depending on epochs, dataset size, etc.), but the code will do the following:
+    * Retrieve CSV files
+    * Encode categorical labels
+    * Use training/testing CSV files, labels, and process_image() function to create TensorFlow datasets (helps with formatting dataframe for ResNet50)
+    * Build full model by loading pre-trained ResNet50 with ImageNet weights
+    * compile model while using desired optimizer (our team switched between Adam and RMSprop to see which is more optimal)
+    * Set number of Epochs to run
+    * Fit and fine-tund model and generate test accuracy and loss
+
+## References:
+[1] “How do I choose a cover for my self-published book?”, Paper Raven Books, 2024. https://paperravenbooks.com/choose-book-cover/ (accessed Nov. 6, 2024)
+[2] “Readers' Favorite Books of 2023”, goodreads, 2023. https://www.goodreads.com/choiceawards/best-books-2023 (accessed Nov. 4, 2024)
+[3] “Image Scraping with Python”, Geeks for Geeks, 2021. https://www.geeksforgeeks.org/image-scraping-with-python/ (accessed Nov. 4, 2024)
+[4] “What is ResNet-50?”, roboflow, 2024. https://blog.roboflow.com/what-is-resnet-50/  (accessed Nov. 6, 2024)
