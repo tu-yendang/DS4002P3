@@ -5,7 +5,15 @@
     * BeautifulSoup - parses HTML content to allow easy access to web page elements
     * display - render HTML or other outputs
     * HTML - allows for embedding HTML content directly
-* 
+    * tensorflow - machine/deep learning tool to build and train neural networks, including image processing. The following are all under tensorflow.keras package
+        * ImageDataGenerator - data augmentation and preprocessing of image data
+        * ResNet50 - access to pre-trained ResNet50 model on ImageNet
+        * Dense, Flatten, GlobalAveragePooling2D - layer classification, and map dimension
+        * Model - combines base ResNet50 model with additional layers
+        * Adam - optimization algorithm for training neural networks
+    * pandas - data analysis and manipulation for dataframes
+    * os - interactions with operating system
+    * sklearn.preprocessing LabelEncoder - converts categorical labels into numeric forms
 * Three laptops were used, where two devices used Mac, while one was conducted on Windows.
 ## Documentation Map
 The following is a map of our project's repository.
@@ -29,7 +37,7 @@ In order to complete this study, users should:
 
 3. Model analysis: Now that the data is properly formatted and split, the data can be used for analysis. In this analysis, we will use the model_analysis python notebook and run it on Rivanna on the files. Google Colab can also be used, however Rivanna is significantly faster to run. For a program this computationally high/complex, Rivanna is recommended. The program is complex because we will be using ResNet50, a tool that specializes in image classification. If needed, change file path names in the code (though it should be the same), or adjust ResNet50 model where desired. Running the program may take a while (depending on epochs, dataset size, etc.), but the code will do the following:
     * Retrieve CSV files
-    * Encode categorical labels
+    * Encode categorical labels into numeric form
     * Use training/testing CSV files, labels, and process_image() function to create TensorFlow datasets (helps with formatting dataframe for ResNet50)
     * Build full model by loading pre-trained ResNet50 with ImageNet weights
     * compile model while using desired optimizer (our team switched between Adam and RMSprop to see which is more optimal)
