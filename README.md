@@ -1,8 +1,12 @@
 # DS4002P3
 ## Software and Platform
-The type(s) of software you used for the project.
-The names of any add-on packages that need to be installed with the software.
-The platform (e.g., Windows, Mac, or Linux) you used.
+* The primary software used for this project was Python, specifically using Interactive Python Notebook files (ipynb). These files were created and used with Google Colab and Rivanna. Data was gathered on Google Colab by using webscraping.
+* The following packages were used to gather data:
+    * BeautifulSoup - parses HTML content to allow easy access to web page elements
+    * display - render HTML or other outputs
+    * HTML - allows for embedding HTML content directly
+* 
+* Three laptops were used, where two devices used Mac, while one was conducted on Windows.
 ## Documentation Map
 The following is a map of our project's repository.
 * DS4002P3 (main directory)
