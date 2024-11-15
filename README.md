@@ -10,7 +10,7 @@
         * ResNet50 - access to pre-trained ResNet50 model on ImageNet
         * Dense, Flatten, GlobalAveragePooling2D - layer classification, and map dimension
         * Model - combines base ResNet50 model with additional layers
-        * Adam - optimization algorithm for training neural networks
+        * RMSprop - optimization algorithm for training neural networks
     * pandas - data analysis and manipulation for dataframes
     * os - interactions with operating system
     * sklearn.preprocessing LabelEncoder - converts categorical labels into numeric forms
