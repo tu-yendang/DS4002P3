@@ -5,6 +5,7 @@
     * BeautifulSoup - parses HTML content to allow easy access to web page elements
     * display - render HTML or other outputs
     * HTML - allows for embedding HTML content directly
+* The following packages were used to create the model:
     * tensorflow - machine/deep learning tool to build and train neural networks, including image processing. The following are all under tensorflow.keras package
         * ImageDataGenerator - data augmentation and preprocessing of image data
         * ResNet50 - access to pre-trained ResNet50 model on ImageNet
