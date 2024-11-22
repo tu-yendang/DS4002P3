@@ -27,6 +27,7 @@
 The following is a map of our project's repository.
 * DS4002P3 (main directory)
  * DATA - folder
+   * Data Appendix.pdf
    * test_book_covers.csv
    * train_book_covers.csv
  * OUTPUT - folder
@@ -34,6 +35,7 @@ The following is a map of our project's repository.
    * eda_book_count_by_genre.png
    * final_training_CNN.csv
    * LossGraph.png
+   * finalaccuracy
  * SCRIPTS - folder
    * preprocessing.ipynb
    * eda.ipynb
