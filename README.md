@@ -1,14 +1,17 @@
 # DS4002P3
 ## Software and Platform
 * The primary software used for this project was Python, specifically using Interactive Python Notebook files (ipynb). These files were created and used with Google Colab and Rivanna. Data was gathered on Google Colab by using webscraping.
+* The following packages were used throughout the project: 
+  * pandas - used for dataframes and manipulating data
+  * matplotlib.pyplot as plt - helps with plotting
 * The following packages were used to gather data:
     * BeautifulSoup - parses HTML content to allow easy access to web page elements
     * display - render HTML or other outputs
     * HTML - allows for embedding HTML content directly
+    * requests - used get request to pull url
 * The following packages were used for exploratory data:
     * import csv - read csv
     * from collections import Counter - uses a Counter class that helps with keeping track of counts
-    * import matplotlib.pyplot as plt - helps with plotting
 * The following packages were used to create the model:
     * tensorflow - machine/deep learning tool to build and train neural networks, including image processing. The following are all under tensorflow.keras package
         * ImageDataGenerator - data augmentation and preprocessing of image data
@@ -27,12 +30,15 @@ The following is a map of our project's repository.
    * test_book_covers.csv
    * train_book_covers.csv
  * OUTPUT - folder
+   * AccuracyGraph.png
    * eda_book_count_by_genre.png
-   (more output to be added)
+   * final_training_CNN.csv
+   * LossGraph.png
  * SCRIPTS - folder
    * preprocessing.ipynb
    * eda.ipynb
    * model_analysis.ipynb
+   * finalgraphs.ipynb
  * LICENSE.md
  * README.md
 ## Reproducing Results Instructions
